@@ -1,5 +1,5 @@
 import { usePublicKey, Swap } from "@strata-foundation/react";
-import { CSSReset } from "@chakra-ui/react";
+import { CSSReset, Text } from "@chakra-ui/react";
 import { useConnection, useWallet } from '@solana/wallet-adapter-react';
 import { useWalletModal } from "@solana/wallet-adapter-react-ui";
 import ReactShadow from "react-shadow/emotion";
@@ -15,7 +15,9 @@ export function SwapComponent() {
   return <div>
       { publicKey ?
         <Swap id={id} />
-        : <div>Please sign in with your wallet first</div>
+        : <Text fontSize="25px" color='#5603FA'>
+          👉🏽 Please sign in with your wallet first ↗️
+          </Text>
       }
   </div>
 }
