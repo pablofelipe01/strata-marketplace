@@ -14,7 +14,7 @@ const App: FC<AppProps> = ({ Component, pageProps }) => {
   return (
     <Providers>
       <Header />
-      <Component {...pageProps} />
+      { <Component {...pageProps} /> as any as React.Component }
       <Toaster
           position="bottom-center"
           containerStyle={{
