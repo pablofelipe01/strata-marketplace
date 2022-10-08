@@ -1,12 +1,12 @@
-import { SwapComponent } from '@/components/SwapComponent';
-import { TokenDisplay } from '@/components/TokenDisplay';
+import { SwapComponent } from '../components/SwapComponent';
+// import { TokenDisplay } from '../components/TokenDisplay';
 import { Container } from '@chakra-ui/react';
-import { usePublicKey } from '@strata-foundation/react';
+// import { usePublicKey } from '@strata-foundation/react';
 import type { InferGetServerSidePropsType, NextPage } from 'next';
 import { GetServerSideProps } from 'next';
 import Head from 'next/head';
 import React from 'react';
-import { MarketplaceFrom } from '../components/MarketplaceForm';
+// import { MarketplaceFrom } from '../components/MarketplaceForm';
 import styles from '../styles/Home.module.css';
 
 export const getServerSideProps: GetServerSideProps = async (context) => {

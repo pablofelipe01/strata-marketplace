@@ -6,7 +6,10 @@ import React from "react";
 import toast from "react-hot-toast";
 import { Wallet } from "./Wallet";
 
-export const Providers: React.FC = ({ children }) => {
+interface Props {
+  children: React.ReactNode;
+}
+export const Providers: React.FC<Props> = ({ children }) => {
   const onError = React.useCallback(
     (error: Error) => {
       console.error(error);
