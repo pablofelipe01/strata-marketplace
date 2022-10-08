@@ -34,7 +34,7 @@ export const Header: React.FC = () => (
     bg="grey"
   >
     <HStack spacing={4}>
-      <Text fontSize="xl">Strata Marketplace</Text>
+      <Text fontSize="xl">Swap</Text>
     </HStack>
     <Box display={{ md: "block" }} flexBasis={{ base: "100%", md: "auto" }}>
       <HStack
