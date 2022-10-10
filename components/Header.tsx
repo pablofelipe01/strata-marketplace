@@ -30,11 +30,11 @@ export const Header: React.FC = () => (
     paddingY={2}
     justifyContent="space-between"
     alignItems="center"
-    color="white"
-    bg="grey"
+    color="purple.500"
+    bg="#EAE9FF"
   >
     <HStack spacing={4}>
-      <Text fontSize="30px">Swap</Text>
+      <Text fontSize="30px"></Text>
     </HStack>
     <Box display={{ md: "block" }} flexBasis={{ base: "100%", md: "auto" }}>
       <HStack
