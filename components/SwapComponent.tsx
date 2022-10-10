@@ -4,6 +4,7 @@ import { useConnection, useWallet } from '@solana/wallet-adapter-react';
 import { useWalletModal } from "@solana/wallet-adapter-react-ui";
 import ReactShadow from "react-shadow/emotion";
 
+
 export function SwapComponent() {
   const { id: idRaw } = useVariables();
   const { publicKey } = useWallet();
@@ -17,6 +18,9 @@ export function SwapComponent() {
         <Swap id={id} />
         : <Text fontSize="25px" color='#5603FA'>
           👉🏽 Please sign in with your wallet first ↗️
+          <p>
+          <a href="https://phantom.app/">No Wallet? click here 🆑 </a>
+          </p>
           </Text>
       }
   </div>
