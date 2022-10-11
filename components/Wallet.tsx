@@ -25,12 +25,12 @@ export const Wallet: FC = ({ children }) => {
   const wallets = useMemo(
     () => [
       new PhantomWalletAdapter(),
-      new SlopeWalletAdapter(),
-      new SolflareWalletAdapter(),
-      new TorusWalletAdapter(),
-      new LedgerWalletAdapter(),
-      new SolletWalletAdapter({}),
-      new SolletExtensionWalletAdapter({}),
+      // new SlopeWalletAdapter(),
+      // new SolflareWalletAdapter(),
+      // new TorusWalletAdapter(),
+      // new LedgerWalletAdapter(),
+      // new SolletWalletAdapter({}),
+      // new SolletExtensionWalletAdapter({}),
     ],
     []
   );
