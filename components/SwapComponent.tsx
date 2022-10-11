@@ -17,10 +17,10 @@ export function SwapComponent() {
       { publicKey ?
         <Swap id={id} />
         : <Text fontSize="25px" color='#5603FA' alignItems='right'>
-          👉🏽 Please sign in with your wallet first ↗️
-          <p>
+          {/* 👉🏽 Please sign in with your wallet first ↗️ */}
+          {/* <p>
           <a href="https://phantom.app/">No Wallet? click here 🆑 </a>
-          </p>
+          </p> */}
           </Text>
       }
   </div>
