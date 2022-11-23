@@ -3,6 +3,7 @@ import { CSSReset, Text } from "@chakra-ui/react";
 import { useConnection, useWallet } from '@solana/wallet-adapter-react';
 import { useWalletModal } from "@solana/wallet-adapter-react-ui";
 import ReactShadow from "react-shadow/emotion";
+import { Lbc } from "@strata-foundation/marketplace-ui";
 
 
 export function SwapComponent() {
@@ -15,7 +16,7 @@ export function SwapComponent() {
 
   return <div>
       { publicKey ?
-        <Swap id={id} />
+        <Lbc id={id} />
         : <Text fontSize="25px" color='#5603FA' alignItems='right'>
           {/* 👉🏽 Please sign in with your wallet first ↗️ */}
           {/* <p>
