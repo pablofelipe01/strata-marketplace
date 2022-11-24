@@ -16,7 +16,7 @@ export function SwapComponent() {
 
   return <div>
       { publicKey ?
-        <Lbc id={id} />
+        <Swap id={id} />
         : <Text fontSize="25px" color='#5603FA' alignItems='right'>
           {/* 👉🏽 Please sign in with your wallet first ↗️ */}
           {/* <p>
